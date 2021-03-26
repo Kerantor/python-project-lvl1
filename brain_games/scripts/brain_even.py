@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-from brain_games import cli
+from brain_games import brain_even
 
 
 def main():
-    cli.welcome_user()
+    brain_even.brain_even()
 
 
 if __name__ == '__main__':
