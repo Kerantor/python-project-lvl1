@@ -2,7 +2,7 @@ from random import randint
 import prompt
 
 
-def check_even(name):
+def check(name):
     n = 0
     while n < 3:
         random_number = randint(1, 100)
@@ -36,6 +36,6 @@ def brain_even():
     print(
         'Hello, {}!\nAnswer "yes" if the number is even, otherwise answer "no".'
         .format(name))
-    n = check_even(name)
+    n = check(name)
     if n == 3:
         print('Congratulations, {}!'.format(name))
