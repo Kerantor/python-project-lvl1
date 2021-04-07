@@ -34,6 +34,6 @@ def brain_calc():
     print(
         "What is the result of the Expression?"
     )
-    check(is_even(name))
+    n = check_calc(name)
     if n == 3:
         print('Congratulations, {}!'.format(name))
