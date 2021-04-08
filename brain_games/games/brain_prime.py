@@ -3,21 +3,28 @@ from brain_games import cli
 import prompt
 
 
-def check_even(number):
-    return 'yes' if number % 2 == 0 else 'no'
+def is_even(num):
+    if num % 2 == 0:
+        return 'no'
+    d = 3
+    while d * d < num and num % d != 0:
+        d += 2
+    if d * d > num:
+        return 'yes'
+    return 'no'
 
 
-def brain_even():
+def brain_prime():
     name = cli.run(
-        "Answer 'yes' if the number is even, otherwise answer 'no'."
+        "Answer 'yes' if given number is prime. Otherwise answer 'no'."
     )
     n = 0
     while n < 3:
-        r_num = randint(1, 100)
-        print('Question: {}'.format(r_num))
+        r_num1 = randint(1, 100)
+        print('Question: {}'.format(r_num1))
         user_answer = prompt.string('Your answer: ')
-        right_answer = check_even(r_num)
-        if user_answer == right_answer:
+        right_answer = is_even(r_num1)
+        if user_answer == str(right_answer):
             n += 1
             print('Correct!')
         else:
