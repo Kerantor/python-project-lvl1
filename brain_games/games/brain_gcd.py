@@ -13,7 +13,10 @@ def calc_gcd(num1, num2):
     return gcd
 
 
-def check_gcd(name):
+def brain_gcd():
+    name = cli.run(
+        "Find the greatest common divisor of given numbers."
+    )
     n = 0
     while n < 3:
         r_num1 = randint(1, 100)
@@ -30,14 +33,5 @@ def check_gcd(name):
                 " Correct answer was '{}'\nLet's try again, {}!"
                 .format(answer, right_answer, name))
             break
-    return n
-
-
-def brain_gcd():
-    name = cli.welcome_user()
-    print(
-        "Find the greatest common divisor of given numbers."
-    )
-    n = check_gcd(name)
     if n == 3:
         print('Congratulations, {}!'.format(name))

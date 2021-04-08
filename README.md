@@ -8,3 +8,5 @@
 <a href="https://asciinema.org/a/405535" target="_blank"><img src="https://asciinema.org/a/405535.svg" /></a>
 <br>STEP 7</br>
 <a href="https://asciinema.org/a/405830" target="_blank"><img src="https://asciinema.org/a/405830.svg" /></a>
+<br>STEP 8</br>
+<a href="https://asciinema.org/a/406011" target="_blank"><img src="https://asciinema.org/a/406011.svg" /></a>

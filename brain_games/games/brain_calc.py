@@ -4,7 +4,10 @@ from brain_games import cli
 import prompt
 
 
-def check_calc(name):
+def brain_calc():
+    name = cli.run(
+        "What is the result of the Expression?"
+    )
     n = 0
     while n < 3:
         r_num1 = randint(1, 10)
@@ -26,14 +29,5 @@ def check_calc(name):
                 " Correct answer was '{}'\nLet's try again, {}!"
                 .format(answer, operation[r], name))
             break
-    return n
-
-
-def brain_calc():
-    name = cli.welcome_user()
-    print(
-        "What is the result of the Expression?"
-    )
-    n = check_calc(name)
     if n == 3:
         print('Congratulations, {}!'.format(name))
